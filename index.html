@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>TODO list</title>
+  <link rel="stylesheet" href="/app.c328ef1a.css"></head>
+
+  <body>
+    <h2>TODO list</h2>
+
+    <div class="topnav">
+        <div class="search-container">
+            <form action="/">
+                <input type="text" id="myInput" placeholder="Search for task.." title="Type in a name">
+            </form>
+        </div>
+        <div class="status-container">
+            <form name="statusForm">
+                <select name="statusSelect" class="opt">
+                    <option value="all">all</option>
+                    <option value="open">open</option>
+                    <option value="done">done</option>
+                </select>
+            </form>
+        </div>
+        <div class="prior-container">
+            <form name="priorForm">
+                <select name="priorSelect" class="opt">
+                    <option value="all">all</option>
+                    <option value="high">high</option>
+                    <option value="normal">normal</option>
+                    <option value="low">low</option>
+                </select>
+            </form>
+        </div>
+        <div class="pillbutton-container">
+            <button id="myBtn" class="pillbutton">Create</button>
+        </div>
+    </div>
+    <div id="wrap">
+        <div class="row" id="placenewcard">
+            <div class="column">
+                <div class="card">
+                    <h3>execute test task</h3>
+                    <p>Ciklum inetrnship</p>
+                    <div>
+                        <div class="priorcard">
+                            <H5>high</H5>
+                            <H4 class="hidestatus">open</H4>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">...</button>
+                            <div class="dropdown-content">
+                                <a href="#">done</a>
+                                <a href="#">edit</a>
+                                <a href="#">delete</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h3>learn Javascript</h3>
+                    <p> ability & advantages</p>
+                    <div>
+                        <div class="priorcard">
+                            <H5>high</H5>
+                        </div>
+                        <H4 class="hidestatus">done</H4>
+                        <div class="dropdown">
+                            <button class="dropbtn">...</button>
+                            <div class="dropdown-content">
+                                <a href="#">done</a>
+                                <a href="#">edit</a>
+                                <a href="#">delete</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h3>apply inetership</h3>
+                    <p>send email</p>
+                    <div>
+                        <div class="priorcard">
+                            <H5>normal</H5>
+                            <H4 class="hidestatus">open</H4>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">...</button>
+                            <div class="dropdown-content">
+                                <a href="#">done</a>
+                                <a href="#">edit</a>
+                                <a href="#">delete</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="close">&times;</span>
+                <form name="cardForm" class="form-container">
+                    <div>
+                        <label for="title">
+                            <H5>Title:</H5>
+                        </label>
+                        <input type="text" id="form-title" name="title" placeholder="Title" value="">
+                    </div>
+                    <div>
+                        <label for="description">
+                            <H5>Description:</H5>
+                        </label>
+                        <textarea type="text" id="form-text" name="description" placeholder="Description" autocomplete="off"></textarea>
+                    </div>
+                    <div>
+                        <label for="priority">
+                            <H5>Priority:</H5>
+                        </label>
+                        <select type="text" id="form-prior" name="priorSelect" class="opt">
+                            <option value="high">high</option>
+                            <option value="normal">normal</option>
+                            <option value="low">low</option>
+                        </select>
+                    </div>
+                    <div class="col-form">
+                        <button id="btnCancel" type="button" class="pillbutton cancel">Cancel</button>
+                        <button id="btnSave" type="button" class="pillbutton">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/app.c328ef1a.js">
+    </script>
+</body>
+</html>
