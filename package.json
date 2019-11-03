@@ -1,4 +1,5 @@
-{"homepage": "https://github.com/Feliciter/todostarter",
+{
+  "homepage": "https://github.com/Feliciter/todostarter",
   "name": "todostarter",
   "version": "1.0.0",
   "description": "",
@@ -6,8 +7,8 @@
   "main": "app.js",
   "scripts": {
     "start": "parcel index.html",
-    "predeploy": "npm run start",
-    "deploy": "npm run build && git add . && git commit -a -m 'latest build' && git push origin master"
+    "deploy": "gh-pages -d dist"
+ 
 
   },
   "author": "BEV",
