@@ -380,9 +380,7 @@ function cardEdit() {
 
 require("./src/scss/common.scss");
 
-var _javascript = _interopRequireDefault(require("./src/js/javascript"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+require("./src/js/javascript");
 },{"./src/scss/common.scss":"src/scss/common.scss","./src/js/javascript":"src/js/javascript.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -411,7 +409,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38777" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43335" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
