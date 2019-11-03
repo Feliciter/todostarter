@@ -7,7 +7,7 @@ Todo-list application
 
 Parcel + Babel (ES6+) + SASS 
 
-Simple todo front-end boilerplate and Javascript bundlers with <a href="https://github.com/parcel-bundler">Parcel</a> and CSS preprocessing with <a href="https://github.com/sass/sass">Sass</a>.
+Simple todo boilerplate and Javascript bundlers with <a href="https://github.com/parcel-bundler">Parcel</a> and CSS preprocessing with <a href="https://github.com/sass/sass">Sass</a>.
 
 ## Installation
 
