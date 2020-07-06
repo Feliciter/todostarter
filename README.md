@@ -1,6 +1,6 @@
 # What's it ?
 
-Todo-list application
+Todo-list template application
 
 [DEMO](http://todo.kissr.com/) 
 
